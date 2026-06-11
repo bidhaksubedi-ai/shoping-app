@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+    <defs>
+      <linearGradient id="cos-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ec4899" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+    </defs>
+    <rect width="400" height="400" fill="#180f1e"/>
+    <rect x="160" y="200" width="80" height="130" rx="10" fill="#2d1b36"/>
+    <rect x="175" y="140" width="50" height="60" fill="url(#cos-grad)"/>
+    <path d="M175,140 L225,140 L210,90 L175,90 Z" fill="#ef4444"/>
+    <rect x="150" y="310" width="100" height="15" rx="5" fill="#ec4899" opacity="0.4"/>
+    <text x="200" y="360" font-family="'Outfit', sans-serif" font-size="20" fill="#ffffff" font-weight="bold" text-anchor="middle">Matte Lipstick</text>
+  </svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+    <defs>
+      <linearGradient id="shoe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+    </defs>
+    <rect width="400" height="400" fill="#18181b"/>
+    <path d="M100,260 L120,200 L180,180 L280,180 C320,180 340,210 330,240 L310,270 L100,270 Z" fill="url(#shoe-grad)" opacity="0.95"/>
+    <path d="M100,270 L310,270 L300,290 L110,290 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M180,180 L195,140 L220,140 L210,180 Z" fill="#27272a"/>
+    <circle cx="140" cy="235" r="15" fill="#18181b"/>
+    <circle cx="260" cy="235" r="15" fill="#18181b"/>
+    <path d="M220,195 L250,210 M230,185 L260,200" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <text x="200" y="360" font-family="'Outfit', sans-serif" font-size="20" fill="#ffffff" font-weight="bold" text-anchor="middle">Retro Sneakers</text>
+  </svg>

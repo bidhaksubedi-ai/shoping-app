@@ -1,0 +1,15 @@
+{
+  "name": "GlowBoost Hydrating Face Serum",
+  "price": 1199,
+  "originalPrice": 1999,
+  "description": "Formulated with 10% Vitamin C and pure Hyaluronic Acid, this ultra-light serum hydrates deeply, brightens dark spots, and rejuvenates tired skin.",
+  "sizes": [
+    "30ml Bottle"
+  ],
+  "colors": [
+    "Standard Drops"
+  ],
+  "rating": 4.7,
+  "stock": 30,
+  "isFeatured": true
+}

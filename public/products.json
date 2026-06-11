@@ -1,0 +1,275 @@
+[
+  {
+    "id": "babywear-knit-hooded-romper",
+    "category": "babywear",
+    "name": "Bear-Ears Knit Hooded Romper",
+    "price": 1299,
+    "originalPrice": 2199,
+    "description": "Adorable heavy-knit romper with teddy bear ears on the hood, finished with cozy cuffs and front-opening wooden buttons for quick baby styling.",
+    "sizes": [
+      "3-6M",
+      "6-12M",
+      "12-18M"
+    ],
+    "colors": [
+      "Caramel Wool",
+      "Cream Beige",
+      "Oatmeal Grey"
+    ],
+    "images": [
+      "/products/babywear/knit-hooded-romper/romper.svg"
+    ],
+    "stock": 10,
+    "isFeatured": true
+  },
+  {
+    "id": "babywear-organic-cotton-onesie",
+    "category": "babywear",
+    "name": "Organic Cotton Baby Onesie Pack",
+    "price": 999,
+    "originalPrice": 1699,
+    "description": "Super-soft, breathable organic cotton onesies featuring nickel-free snaps at the diaper line and expandable shoulders for easy dressing.",
+    "sizes": [
+      "0-3M",
+      "3-6M",
+      "6-12M",
+      "12-18M"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Cloud Gray",
+      "Sage Green"
+    ],
+    "images": [
+      "/products/babywear/organic-cotton-onesie/onesie.svg"
+    ],
+    "stock": 15,
+    "isFeatured": false
+  },
+  {
+    "id": "babywear-swaddle-blanket-set",
+    "category": "babywear",
+    "name": "Muslin Swaddle Blanket 3-Pack",
+    "price": 899,
+    "originalPrice": 1499,
+    "description": "Made of 100% cotton muslin, these lightweight, breathable swaddles become softer with every wash. Printed with certified non-toxic organic inks.",
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Animal Print Set",
+      "Botanical Set",
+      "Solid Pastels Set"
+    ],
+    "images": [
+      "/products/babywear/swaddle-blanket-set/swaddles.svg"
+    ],
+    "stock": 12,
+    "isFeatured": true
+  },
+  {
+    "id": "clothes-classic-denim-jacket",
+    "category": "clothes",
+    "name": "Classic Indigo Denim Jacket",
+    "price": 1899,
+    "originalPrice": 3499,
+    "description": "A premium weight indigo wash denim jacket with button chest pockets, button cuffs, and adjustable waist tabs. Styled for a timeless streetwear aesthetic.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Indigo Wash",
+      "Light Blue",
+      "Vintgae Black"
+    ],
+    "images": [
+      "/products/clothes/classic-denim-jacket/jacket.svg"
+    ],
+    "stock": 12,
+    "isFeatured": true
+  },
+  {
+    "id": "clothes-high-waisted-jeans",
+    "category": "clothes",
+    "name": "Vintage High-Waisted Slim Jeans",
+    "price": 1999,
+    "originalPrice": 3999,
+    "description": "Sturdy cotton denim jeans with a flattering high-rise waist, classic 5-pocket construction, and a slightly tapered slim ankle profile.",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "colors": [
+      "Acid Blue",
+      "Stone Wash Grey",
+      "Deep Indigo"
+    ],
+    "images": [
+      "/products/clothes/high-waisted-jeans/jeans.svg"
+    ],
+    "stock": 15,
+    "isFeatured": false
+  },
+  {
+    "id": "clothes-linen-casual-shirt",
+    "category": "clothes",
+    "name": "Premium Linen Casual Shirt",
+    "price": 1499,
+    "originalPrice": 2499,
+    "description": "Crafted from highly breathable organic flax linen, this relaxed-fit shirt features a button-down collar and a patch chest pocket. Ideal for summer styling.",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Mint Green",
+      "Sand Beige",
+      "Pastel Pink",
+      "Classic White"
+    ],
+    "images": [
+      "/products/clothes/linen-casual-shirt/shirt.svg"
+    ],
+    "stock": 18,
+    "isFeatured": true
+  },
+  {
+    "id": "cosmetics-hydrating-face-serum",
+    "category": "cosmetics",
+    "name": "GlowBoost Hydrating Face Serum",
+    "price": 1199,
+    "originalPrice": 1999,
+    "description": "Formulated with 10% Vitamin C and pure Hyaluronic Acid, this ultra-light serum hydrates deeply, brightens dark spots, and rejuvenates tired skin.",
+    "sizes": [
+      "30ml Bottle"
+    ],
+    "colors": [
+      "Standard Drops"
+    ],
+    "images": [
+      "/products/cosmetics/hydrating-face-serum/serum.svg"
+    ],
+    "stock": 30,
+    "isFeatured": true
+  },
+  {
+    "id": "cosmetics-velvet-matte-lipstick",
+    "category": "cosmetics",
+    "name": "Velvet Matte Moisture Lipstick",
+    "price": 799,
+    "originalPrice": 1299,
+    "description": "Richly pigmented moisturizing matte lipstick that glides on smoothly and stays comfortable all day without drying your lips.",
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      "Ruby Sunset",
+      "Dusty Rose",
+      "Plum Fusion"
+    ],
+    "images": [
+      "/products/cosmetics/velvet-matte-lipstick/lipstick.svg"
+    ],
+    "stock": 25,
+    "isFeatured": true
+  },
+  {
+    "id": "cosmetics-waterproof-mascara",
+    "category": "cosmetics",
+    "name": "Infinity Lash Waterproof Mascara",
+    "price": 699,
+    "originalPrice": 1099,
+    "description": "Get maximum length and lift. Our signature smudge-proof, carbon-black waterproof formula lasts up to 24 hours without flaking.",
+    "sizes": [
+      "Standard Tube"
+    ],
+    "colors": [
+      "Pitch Black",
+      "Brownish Black"
+    ],
+    "images": [
+      "/products/cosmetics/waterproof-mascara/mascara.svg"
+    ],
+    "stock": 40,
+    "isFeatured": false
+  },
+  {
+    "id": "footwear-athletic-running-shoes",
+    "category": "footwear",
+    "name": "AeroPulse Athletic Running Shoes",
+    "price": 3499,
+    "originalPrice": 6999,
+    "description": "High-performance running shoes equipped with a multi-directional mesh outer shell for ventilation, and a responsive EVA foam sole to absorb high impacts.",
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Neon Blue",
+      "Signal Orange",
+      "Stealth Grey"
+    ],
+    "images": [
+      "/products/footwear/athletic-running-shoes/running.svg"
+    ],
+    "stock": 10,
+    "isFeatured": false
+  },
+  {
+    "id": "footwear-classic-leather-loafers",
+    "category": "footwear",
+    "name": "Handcrafted Leather Penny Loafers",
+    "price": 2999,
+    "originalPrice": 5499,
+    "description": "Elegant and comfortable, these loafers are made with hand-stitched grain leather, detailed with a penny strap across the vamp and finished with lightweight stacked heels.",
+    "sizes": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Mahogany Brown",
+      "Classic Black",
+      "Tan Leather"
+    ],
+    "images": [
+      "/products/footwear/classic-leather-loafers/loafers.svg"
+    ],
+    "stock": 6,
+    "isFeatured": true
+  },
+  {
+    "id": "footwear-retro-court-sneakers",
+    "category": "footwear",
+    "name": "Retro Court Leather Sneakers",
+    "price": 2499,
+    "originalPrice": 4999,
+    "description": "Classic court-inspired sneakers with a genuine soft-grain leather upper, textured rubber outsole for traction, and vintage cream overlays.",
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Vintage White",
+      "Forest Green Accent",
+      "Midnight Navy Accent"
+    ],
+    "images": [
+      "/products/footwear/retro-court-sneakers/sneakers.svg"
+    ],
+    "stock": 8,
+    "isFeatured": true
+  }
+]

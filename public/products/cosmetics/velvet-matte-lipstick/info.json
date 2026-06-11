@@ -1,0 +1,17 @@
+{
+  "name": "Velvet Matte Moisture Lipstick",
+  "price": 799,
+  "originalPrice": 1299,
+  "description": "Richly pigmented moisturizing matte lipstick that glides on smoothly and stays comfortable all day without drying your lips.",
+  "sizes": [
+    "Standard"
+  ],
+  "colors": [
+    "Ruby Sunset",
+    "Dusty Rose",
+    "Plum Fusion"
+  ],
+  "rating": 4.6,
+  "stock": 25,
+  "isFeatured": true
+}

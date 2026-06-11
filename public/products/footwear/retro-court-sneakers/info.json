@@ -1,0 +1,21 @@
+{
+  "name": "Retro Court Leather Sneakers",
+  "price": 2499,
+  "originalPrice": 4999,
+  "description": "Classic court-inspired sneakers with a genuine soft-grain leather upper, textured rubber outsole for traction, and vintage cream overlays.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "colors": [
+    "Vintage White",
+    "Forest Green Accent",
+    "Midnight Navy Accent"
+  ],
+  "rating": 4.9,
+  "stock": 8,
+  "isFeatured": true
+}

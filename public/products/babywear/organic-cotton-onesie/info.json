@@ -1,0 +1,20 @@
+{
+  "name": "Organic Cotton Baby Onesie Pack",
+  "price": 999,
+  "originalPrice": 1699,
+  "description": "Super-soft, breathable organic cotton onesies featuring nickel-free snaps at the diaper line and expandable shoulders for easy dressing.",
+  "sizes": [
+    "0-3M",
+    "3-6M",
+    "6-12M",
+    "12-18M"
+  ],
+  "colors": [
+    "Sky Blue",
+    "Cloud Gray",
+    "Sage Green"
+  ],
+  "rating": 4.7,
+  "stock": 15,
+  "isFeatured": false
+}

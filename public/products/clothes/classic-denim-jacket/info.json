@@ -1,0 +1,20 @@
+{
+  "name": "Classic Indigo Denim Jacket",
+  "price": 1899,
+  "originalPrice": 3499,
+  "description": "A premium weight indigo wash denim jacket with button chest pockets, button cuffs, and adjustable waist tabs. Styled for a timeless streetwear aesthetic.",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "colors": [
+    "Indigo Wash",
+    "Light Blue",
+    "Vintgae Black"
+  ],
+  "rating": 4.8,
+  "stock": 12,
+  "isFeatured": true
+}

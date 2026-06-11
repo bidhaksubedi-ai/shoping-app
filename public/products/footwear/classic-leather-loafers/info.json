@@ -1,0 +1,20 @@
+{
+  "name": "Handcrafted Leather Penny Loafers",
+  "price": 2999,
+  "originalPrice": 5499,
+  "description": "Elegant and comfortable, these loafers are made with hand-stitched grain leather, detailed with a penny strap across the vamp and finished with lightweight stacked heels.",
+  "sizes": [
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "colors": [
+    "Mahogany Brown",
+    "Classic Black",
+    "Tan Leather"
+  ],
+  "rating": 4.8,
+  "stock": 6,
+  "isFeatured": true
+}

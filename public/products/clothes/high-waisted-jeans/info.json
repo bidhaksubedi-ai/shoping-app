@@ -1,0 +1,20 @@
+{
+  "name": "Vintage High-Waisted Slim Jeans",
+  "price": 1999,
+  "originalPrice": 3999,
+  "description": "Sturdy cotton denim jeans with a flattering high-rise waist, classic 5-pocket construction, and a slightly tapered slim ankle profile.",
+  "sizes": [
+    "28",
+    "30",
+    "32",
+    "34"
+  ],
+  "colors": [
+    "Acid Blue",
+    "Stone Wash Grey",
+    "Deep Indigo"
+  ],
+  "rating": 4.7,
+  "stock": 15,
+  "isFeatured": false
+}

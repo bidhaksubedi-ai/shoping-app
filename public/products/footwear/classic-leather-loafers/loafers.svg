@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+    <rect width="400" height="400" fill="#fafaf9"/>
+    <path d="M100,250 L120,205 L230,195 L310,205 C330,208 340,225 330,245 L310,265 L100,265 Z" fill="#78350f" opacity="0.95"/>
+    <path d="M95,265 L320,265 L315,275 L100,275 Z" fill="#1c1917"/>
+    <rect x="190" y="195" width="50" height="10" rx="3" fill="#451a03"/>
+    <text x="200" y="360" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#1c1917" font-weight="bold" text-anchor="middle">Leather Loafers</text>
+  </svg>

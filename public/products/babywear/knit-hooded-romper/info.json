@@ -1,0 +1,19 @@
+{
+  "name": "Bear-Ears Knit Hooded Romper",
+  "price": 1299,
+  "originalPrice": 2199,
+  "description": "Adorable heavy-knit romper with teddy bear ears on the hood, finished with cozy cuffs and front-opening wooden buttons for quick baby styling.",
+  "sizes": [
+    "3-6M",
+    "6-12M",
+    "12-18M"
+  ],
+  "colors": [
+    "Caramel Wool",
+    "Cream Beige",
+    "Oatmeal Grey"
+  ],
+  "rating": 4.8,
+  "stock": 10,
+  "isFeatured": true
+}

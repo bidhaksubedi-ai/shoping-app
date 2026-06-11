@@ -1,0 +1,20 @@
+{
+  "name": "Premium Linen Casual Shirt",
+  "price": 1499,
+  "originalPrice": 2499,
+  "description": "Crafted from highly breathable organic flax linen, this relaxed-fit shirt features a button-down collar and a patch chest pocket. Ideal for summer styling.",
+  "sizes": [
+    "M",
+    "L",
+    "XL"
+  ],
+  "colors": [
+    "Mint Green",
+    "Sand Beige",
+    "Pastel Pink",
+    "Classic White"
+  ],
+  "rating": 4.5,
+  "stock": 18,
+  "isFeatured": true
+}

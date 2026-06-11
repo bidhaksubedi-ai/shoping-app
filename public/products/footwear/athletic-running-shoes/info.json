@@ -1,0 +1,20 @@
+{
+  "name": "AeroPulse Athletic Running Shoes",
+  "price": 3499,
+  "originalPrice": 6999,
+  "description": "High-performance running shoes equipped with a multi-directional mesh outer shell for ventilation, and a responsive EVA foam sole to absorb high impacts.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "colors": [
+    "Neon Blue",
+    "Signal Orange",
+    "Stealth Grey"
+  ],
+  "rating": 4.6,
+  "stock": 10,
+  "isFeatured": false
+}
