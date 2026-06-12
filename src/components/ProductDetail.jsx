@@ -105,7 +105,7 @@ Please let me know if it's available!`;
         <div className="modal-details">
           <div>
             <span className="modal-category">{product.category}</span>
-            <h2 className="modal-title" style={{ marginTop: '4px' }}>{product.name}</h2>
+            <h1 className="modal-title" style={{ marginTop: '4px' }}>{product.name}</h1>
           </div>
 
 

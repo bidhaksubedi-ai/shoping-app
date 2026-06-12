@@ -396,6 +396,63 @@ function generateProductIndex() {
   // Write index file
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(productsList, null, 2), 'utf-8');
   console.log(`Successfully compiled ${productsList.length} products to ${OUTPUT_FILE}`);
+
+  // Generate sitemap.xml dynamically
+  try {
+    const todayStr = new Date().toISOString().split('T')[0];
+    const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
+    
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+    xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+    
+    // 1. Homepage
+    xml += `  <!-- Main Catalog View -->\n`;
+    xml += `  <url>\n`;
+    xml += `    <loc>https://koselicart.com/</loc>\n`;
+    xml += `    <lastmod>${todayStr}</lastmod>\n`;
+    xml += `    <changefreq>daily</changefreq>\n`;
+    xml += `    <priority>1.0</priority>\n`;
+    xml += `  </url>\n\n`;
+    
+    // 2. Help Pages
+    xml += `  <!-- Help & Support -->\n`;
+    xml += `  <url>\n`;
+    xml += `    <loc>https://koselicart.com/?view=help-center</loc>\n`;
+    xml += `    <lastmod>${todayStr}</lastmod>\n`;
+    xml += `    <changefreq>weekly</changefreq>\n`;
+    xml += `    <priority>0.5</priority>\n`;
+    xml += `  </url>\n`;
+    xml += `  <url>\n`;
+    xml += `    <loc>https://koselicart.com/?view=help-center&amp;tab=how-to-buy</loc>\n`;
+    xml += `    <lastmod>${todayStr}</lastmod>\n`;
+    xml += `    <changefreq>weekly</changefreq>\n`;
+    xml += `    <priority>0.5</priority>\n`;
+    xml += `  </url>\n`;
+    xml += `  <url>\n`;
+    xml += `    <loc>https://koselicart.com/?view=help-center&amp;tab=contact</loc>\n`;
+    xml += `    <lastmod>${todayStr}</lastmod>\n`;
+    xml += `    <changefreq>weekly</changefreq>\n`;
+    xml += `    <priority>0.5</priority>\n`;
+    xml += `  </url>\n\n`;
+
+    // 3. Products
+    xml += `  <!-- Dynamic Products Catalog -->\n`;
+    productsList.forEach(product => {
+      xml += `  <url>\n`;
+      xml += `    <loc>https://koselicart.com/?product=${product.id}</loc>\n`;
+      xml += `    <lastmod>${todayStr}</lastmod>\n`;
+      xml += `    <changefreq>weekly</changefreq>\n`;
+      xml += `    <priority>0.8</priority>\n`;
+      xml += `  </url>\n`;
+    });
+    
+    xml += `</urlset>\n`;
+    
+    fs.writeFileSync(sitemapPath, xml, 'utf-8');
+    console.log(`Successfully generated dynamic sitemap with ${productsList.length} products to ${sitemapPath}`);
+  } catch (err) {
+    console.error('Failed to generate sitemap.xml:', err);
+  }
 }
 
 generateProductIndex();

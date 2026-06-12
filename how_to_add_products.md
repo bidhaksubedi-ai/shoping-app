@@ -1,6 +1,6 @@
 # How to Add New Products to Your Shop
 
-Adding products to your StyleVault shop is designed to be extremely simple and entirely file-based. You do not need to edit any code!
+Adding products to your Koseli Cart Nepal shop is designed to be extremely simple and entirely file-based. You do not need to edit any code!
 
 Follow these 4 simple steps to list a new product:
 

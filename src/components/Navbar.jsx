@@ -7,7 +7,7 @@ export default function Navbar({
   setActiveCategory,
   cartCount,
   onCartClick,
-  shopName = 'StyleVault',
+  shopName = 'Koseli Cart Nepal',
   instagramUrl = '#',
   theme = 'light',
   toggleTheme
@@ -22,9 +22,9 @@ export default function Navbar({
             setActiveCategory('all');
             setSearchQuery('');
           }}
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
         >
-          <span style={{ color: 'var(--primary-color)' }}>✦</span>
+          <img src="/nepal.png" alt="Nepal Flag" style={{ height: '22px', width: 'auto', objectFit: 'contain' }} />
           <span className="gradient-text">{shopName}</span>
         </div>
 
@@ -45,6 +45,7 @@ export default function Navbar({
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
           <input
+            id="navbar-search-input"
             type="text"
             placeholder="Search clothes, shoes, cosmetics..."
             value={searchQuery}
@@ -56,6 +57,7 @@ export default function Navbar({
         <div className="navbar-actions">
           {/* Theme Toggle Button */}
           <button
+            id="navbar-theme-toggle"
             className="btn-icon-only"
             onClick={toggleTheme}
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
@@ -102,6 +104,7 @@ export default function Navbar({
 
           {/* Instagram Button */}
           <a
+            id="navbar-instagram-link"
             href={instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -127,6 +130,7 @@ export default function Navbar({
 
           {/* Shopping Cart Button */}
           <button
+            id="navbar-cart-toggle"
             className="btn-icon-only cart-badge-container"
             onClick={onCartClick}
             aria-label="Shopping Cart"

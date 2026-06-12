@@ -6,9 +6,10 @@ import CartDrawer from './components/CartDrawer';
 import HelpCenter from './components/HelpCenter';
 
 // Fetch credentials from Vite environment variables (with robust fallbacks)
-const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'StyleVault';
-const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '9779800000000';
-const INSTAGRAM_URL = import.meta.env.VITE_INSTAGRAM_URL || 'https://www.instagram.com';
+const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Koseli Cart Nepal';
+const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '+977 9817521186';
+const INSTAGRAM_URL = import.meta.env.VITE_INSTAGRAM_URL || 'https://www.instagram.com/shop.koselicart';
+const SUPPORT_EMAIL = import.meta.env.VITE_SUPPORT_EMAIL || 'koselicart@gmail.com';
 const CURRENCY = import.meta.env.VITE_CURRENCY || 'Rs.';
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
   // Theme State
   const [theme, setTheme] = useState(() => {
     try {
-      const saved = localStorage.getItem('stylevault_theme');
+      const saved = localStorage.getItem('koselicart_theme');
       return saved || 'light';
     } catch {
       return 'light';
@@ -34,7 +35,7 @@ export default function App() {
   // Cart States
   const [cartItems, setCartItems] = useState(() => {
     try {
-      const saved = localStorage.getItem('stylevault_cart');
+      const saved = localStorage.getItem('koselicart_cart');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -60,12 +61,12 @@ export default function App() {
     } else {
       document.documentElement.classList.remove('dark');
     }
-    localStorage.setItem('stylevault_theme', theme);
+    localStorage.setItem('koselicart_theme', theme);
   }, [theme]);
 
   // Sync Cart to LocalStorage
   useEffect(() => {
-    localStorage.setItem('stylevault_cart', JSON.stringify(cartItems));
+    localStorage.setItem('koselicart_cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   // Load Products JSON on Startup
@@ -320,6 +321,7 @@ export default function App() {
           onClose={handleCloseHelpCenter}
           shopName={SHOP_NAME}
           whatsappNumber={WHATSAPP_NUMBER}
+          supportEmail={SUPPORT_EMAIL}
         />
       ) : (
         /* Render Dashboard Catalog Grid */
@@ -343,13 +345,13 @@ export default function App() {
       <footer className="footer">
         <div className="container">
           <div className="footer-directory">
-            {/* Col 1: About StyleVault */}
+            {/* Col 1: About Koseli Cart Nepal */}
             <div className="footer-col">
-              <div className="footer-logo" style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px' }}>
-                <span style={{ color: 'var(--primary-color)' }}>✦</span> {SHOP_NAME}
+              <div className="footer-logo" style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <img src="/nepal.png" alt="Nepal Flag" style={{ height: '20px', width: 'auto', objectFit: 'contain' }} /> {SHOP_NAME}
               </div>
               <p className="footer-desc">
-                Your ultimate curated fashion vault. Browse premium clothing, footwear, and cosmetics. Checkout directly via encrypted WhatsApp messaging.
+                Your ultimate curated shopping cart in Nepal. Browse premium clothing, footwear, and cosmetics. Checkout directly via encrypted WhatsApp messaging.
               </p>
               <div className="footer-socials">
                 <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="footer-social-link" title="Instagram">
@@ -377,9 +379,9 @@ export default function App() {
               </ul>
             </div>
 
-            {/* Col 3: StyleVault & Policy */}
+            {/* Col 3: Policy */}
             <div className="footer-col">
-              <h3>StyleVault & Policy</h3>
+              <h3>{SHOP_NAME} & Policy</h3>
               <ul>
                 <li><a onClick={() => handleOpenHelpCenter('terms')}>Terms & Conditions</a></li>
                 <li><a onClick={() => handleOpenHelpCenter('privacy')}>Privacy Policy</a></li>
@@ -444,7 +446,7 @@ export default function App() {
 
       {/* Floating Email Us Button */}
       <a 
-        href="mailto:support@stylevault.com?subject=Inquiry%20from%20StyleVault%20Customer"
+        href={`mailto:${SUPPORT_EMAIL}?subject=Inquiry%20from%20${SHOP_NAME}%20Customer`}
         className="floating-email-btn animate-fade-in"
         title="Email Us"
       >

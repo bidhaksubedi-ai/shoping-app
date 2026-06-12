@@ -9,7 +9,7 @@ const TABS = [
   { id: 'contact', label: 'Contact Us', icon: '📞' }
 ];
 
-export default function HelpCenter({ activeTab, setActiveTab, onClose, shopName, whatsappNumber }) {
+export default function HelpCenter({ activeTab, setActiveTab, onClose, shopName, whatsappNumber, supportEmail = 'koselicart@gmail.com' }) {
   const currentTab = TABS.find((t) => t.id === activeTab) ? activeTab : 'help';
 
   const renderContent = () => {
@@ -56,7 +56,7 @@ export default function HelpCenter({ activeTab, setActiveTab, onClose, shopName,
         return (
           <div className="help-content-section animate-fade-in">
             <h2>Step-by-Step Purchase Guide</h2>
-            <p className="help-intro-text">Shopping with StyleVault is designed to be personalized, simple, and secure.</p>
+            <p className="help-intro-text">Shopping with {shopName} is designed to be personalized, simple, and secure.</p>
             
             <div className="steps-container">
               <div className="step-card">
@@ -118,7 +118,7 @@ export default function HelpCenter({ activeTab, setActiveTab, onClose, shopName,
         return (
           <div className="help-content-section animate-fade-in">
             <h2>Terms & Conditions of Service</h2>
-            <p className="help-intro-text">Please review the rules that guide the usage of the StyleVault web storefront.</p>
+            <p className="help-intro-text">Please review the rules that guide the usage of the {shopName} web storefront.</p>
             <div className="text-document">
               <p><strong>1. Introduction</strong>: Welcome to {shopName}. By accessing or using our store, you agree to comply with our Terms of Service.</p>
               <p><strong>2. Product Representations</strong>: We make every effort to display the colors, sizing, and details of our products as accurately as possible. However, the vector illustrations and screens may result in slight visual variance.</p>
@@ -161,7 +161,7 @@ export default function HelpCenter({ activeTab, setActiveTab, onClose, shopName,
                 <span className="contact-icon">✉️</span>
                 <div>
                   <strong>Email Support</strong>
-                  <p><a href="mailto:support@stylevault.com">support@stylevault.com</a></p>
+                  <p><a href={`mailto:${supportEmail}`}>{supportEmail}</a></p>
                 </div>
               </div>
 
@@ -199,7 +199,7 @@ export default function HelpCenter({ activeTab, setActiveTab, onClose, shopName,
           </svg>
           Back to Shop
         </button>
-        <h1>StyleVault Customer Portal</h1>
+        <h1>{shopName} Customer Portal</h1>
       </div>
 
       <div className="help-body-layout">
