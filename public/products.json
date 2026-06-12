@@ -20,7 +20,8 @@
       "/products/babywear/knit-hooded-romper/romper.svg"
     ],
     "stock": 10,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "babywear-organic-cotton-onesie",
@@ -44,7 +45,8 @@
       "/products/babywear/organic-cotton-onesie/onesie.svg"
     ],
     "stock": 15,
-    "isFeatured": false
+    "isFeatured": false,
+    "isFlashSale": true
   },
   {
     "id": "babywear-swaddle-blanket-set",
@@ -65,7 +67,8 @@
       "/products/babywear/swaddle-blanket-set/swaddles.svg"
     ],
     "stock": 12,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "clothes-classic-denim-jacket",
@@ -89,7 +92,8 @@
       "/products/clothes/classic-denim-jacket/jacket.svg"
     ],
     "stock": 12,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "clothes-high-waisted-jeans",
@@ -113,7 +117,8 @@
       "/products/clothes/high-waisted-jeans/jeans.svg"
     ],
     "stock": 15,
-    "isFeatured": false
+    "isFeatured": false,
+    "isFlashSale": true
   },
   {
     "id": "clothes-linen-casual-shirt",
@@ -137,7 +142,8 @@
       "/products/clothes/linen-casual-shirt/shirt.svg"
     ],
     "stock": 18,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "cosmetics-hydrating-face-serum",
@@ -156,7 +162,8 @@
       "/products/cosmetics/hydrating-face-serum/serum.svg"
     ],
     "stock": 30,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "cosmetics-velvet-matte-lipstick",
@@ -177,7 +184,8 @@
       "/products/cosmetics/velvet-matte-lipstick/lipstick.svg"
     ],
     "stock": 25,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "cosmetics-waterproof-mascara",
@@ -197,7 +205,8 @@
       "/products/cosmetics/waterproof-mascara/mascara.svg"
     ],
     "stock": 40,
-    "isFeatured": false
+    "isFeatured": false,
+    "isFlashSale": true
   },
   {
     "id": "footwear-athletic-running-shoes",
@@ -221,7 +230,8 @@
       "/products/footwear/athletic-running-shoes/running.svg"
     ],
     "stock": 10,
-    "isFeatured": false
+    "isFeatured": false,
+    "isFlashSale": true
   },
   {
     "id": "footwear-classic-leather-loafers",
@@ -245,7 +255,8 @@
       "/products/footwear/classic-leather-loafers/loafers.svg"
     ],
     "stock": 6,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   },
   {
     "id": "footwear-retro-court-sneakers",
@@ -270,6 +281,7 @@
       "/products/footwear/retro-court-sneakers/sneakers.svg"
     ],
     "stock": 8,
-    "isFeatured": true
+    "isFeatured": true,
+    "isFlashSale": true
   }
 ]

@@ -16,5 +16,6 @@
   ],
   "rating": 4.6,
   "stock": 10,
-  "isFeatured": false
+  "isFeatured": false,
+  "isFlashSale": true
 }

@@ -358,7 +358,8 @@ function generateProductIndex() {
           sizes: ["Standard"],
           colors: ["Default"],
           stock: 10,
-          isFeatured: false
+          isFeatured: false,
+          isFlashSale: false
         };
         // Auto-create info.json template for convenience
         fs.writeFileSync(infoPath, JSON.stringify(info, null, 2), 'utf-8');
@@ -386,7 +387,8 @@ function generateProductIndex() {
         colors: Array.isArray(info.colors) ? info.colors : [],
         images: images.length > 0 ? images : ['/placeholder.svg'],
         stock: Number(info.stock) || 0,
-        isFeatured: !!info.isFeatured
+        isFeatured: !!info.isFeatured,
+        isFlashSale: !!info.isFlashSale
       };
 
       productsList.push(product);

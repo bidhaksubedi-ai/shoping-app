@@ -334,7 +334,7 @@ export default function App() {
           setSortOption={setSortOption}
           currency={CURRENCY}
           instagramUrl={INSTAGRAM_URL}
-          flashSaleProducts={searchQuery === '' && activeCategory === 'all' ? products.filter(p => p.originalPrice > p.price).slice(0, 6) : []}
+          flashSaleProducts={searchQuery === '' && activeCategory === 'all' ? products.filter(p => p.isFlashSale).slice(0, 6) : []}
           visibleCount={visibleCount}
           onLoadMore={() => setVisibleCount((prev) => prev + 6)}
           hasMore={filteredProducts.length > visibleCount}
