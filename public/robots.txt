@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://koselicart.com/sitemap.xml
+Sitemap: https://karishmasubedi.com.np/sitemap.xml

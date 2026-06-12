@@ -402,13 +402,27 @@ function generateProductIndex() {
     const todayStr = new Date().toISOString().split('T')[0];
     const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
     
+    // Extract site url from .env
+    let siteUrl = 'https://karishmasubedi.com.np';
+    const envPath = path.join(__dirname, '..', '.env');
+    if (fs.existsSync(envPath)) {
+      const envContent = fs.readFileSync(envPath, 'utf-8');
+      const match = envContent.match(/VITE_SITE_URL\s*=\s*(.*)/);
+      if (match && match[1]) {
+        siteUrl = match[1].trim().replace(/['";]/g, '');
+      }
+    }
+    if (siteUrl.endsWith('/')) {
+      siteUrl = siteUrl.slice(0, -1);
+    }
+
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
     xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
     
     // 1. Homepage
     xml += `  <!-- Main Catalog View -->\n`;
     xml += `  <url>\n`;
-    xml += `    <loc>https://koselicart.com/</loc>\n`;
+    xml += `    <loc>${siteUrl}/</loc>\n`;
     xml += `    <lastmod>${todayStr}</lastmod>\n`;
     xml += `    <changefreq>daily</changefreq>\n`;
     xml += `    <priority>1.0</priority>\n`;
@@ -417,19 +431,19 @@ function generateProductIndex() {
     // 2. Help Pages
     xml += `  <!-- Help & Support -->\n`;
     xml += `  <url>\n`;
-    xml += `    <loc>https://koselicart.com/?view=help-center</loc>\n`;
+    xml += `    <loc>${siteUrl}/?view=help-center</loc>\n`;
     xml += `    <lastmod>${todayStr}</lastmod>\n`;
     xml += `    <changefreq>weekly</changefreq>\n`;
     xml += `    <priority>0.5</priority>\n`;
     xml += `  </url>\n`;
     xml += `  <url>\n`;
-    xml += `    <loc>https://koselicart.com/?view=help-center&amp;tab=how-to-buy</loc>\n`;
+    xml += `    <loc>${siteUrl}/?view=help-center&amp;tab=how-to-buy</loc>\n`;
     xml += `    <lastmod>${todayStr}</lastmod>\n`;
     xml += `    <changefreq>weekly</changefreq>\n`;
     xml += `    <priority>0.5</priority>\n`;
     xml += `  </url>\n`;
     xml += `  <url>\n`;
-    xml += `    <loc>https://koselicart.com/?view=help-center&amp;tab=contact</loc>\n`;
+    xml += `    <loc>${siteUrl}/?view=help-center&amp;tab=contact</loc>\n`;
     xml += `    <lastmod>${todayStr}</lastmod>\n`;
     xml += `    <changefreq>weekly</changefreq>\n`;
     xml += `    <priority>0.5</priority>\n`;
@@ -439,7 +453,7 @@ function generateProductIndex() {
     xml += `  <!-- Dynamic Products Catalog -->\n`;
     productsList.forEach(product => {
       xml += `  <url>\n`;
-      xml += `    <loc>https://koselicart.com/?product=${product.id}</loc>\n`;
+      xml += `    <loc>${siteUrl}/?product=${product.id}</loc>\n`;
       xml += `    <lastmod>${todayStr}</lastmod>\n`;
       xml += `    <changefreq>weekly</changefreq>\n`;
       xml += `    <priority>0.8</priority>\n`;
@@ -449,7 +463,7 @@ function generateProductIndex() {
     xml += `</urlset>\n`;
     
     fs.writeFileSync(sitemapPath, xml, 'utf-8');
-    console.log(`Successfully generated dynamic sitemap with ${productsList.length} products to ${sitemapPath}`);
+    console.log(`Successfully generated dynamic sitemap with ${productsList.length} products to ${sitemapPath} using base URL ${siteUrl}`);
   } catch (err) {
     console.error('Failed to generate sitemap.xml:', err);
   }
